@@ -1,1 +1,225 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+        color: #007bff;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header h1 {
+        margin: 10px 0;
+    }
+
+    .contact {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .contact a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .section {
+        margin: 20px 0;
+    }
+
+    .section h2 {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 5px;
+    }
+
+    .item {
+        margin-bottom: 15px;
+    }
+
+    .item h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #555;
+    }
+
+    .item p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .skills ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .skills ul li {
+        display: inline-block;
+        background: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        margin: 5px 5px 5px 0;
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+    <main class="container">
+        <section class="header">
+            <h1>Teri Cunningham Dowdy</h1>
+            <p class="contact">
+                Email:
+                <a href="mailto:teri.dowdy@gmail.com">teri.dowdy@gmail.com</a>
+                | <a href="tel:8593390440">859-339-0440</a> | LinkedIn:
+                <a href="https://www.linkedin.com/in/teri-cunningham-dowdy-m-sc-86ba2a7a/" target="_blank">Teri Cunningham Dowdy</a>
+            </p>
+        </section>
+        <section class="section">
+            <h2>Summary</h2>
+            <p>
+                Experienced and results-oriented Systems Consultant with a strong background in GIS and IT, specializing in spatial
+                data
+                management, data analytics, database administration, and GIS application development. Skilled in programming with
+                Python
+                and SQL, and proficient in web technologies including HTML, CSS, and JavaScript. Demonstrated ability to lead
+                cross-functional teams, automate complex workflows, and integrate diverse data sources to drive efficiency and
+                informed
+                decision-making. Proven expertise in developing and managing enterprise-level spatial databases, custom scripting
+                solutions, and big data technologies. Recognized for advancing real-time data analytics capabilities, creating
+                intuitive
+                web-based GIS tools, and promoting GIS education, with a strong commitment to continuous learning and strategic
+                collaboration.
+            </p>
+        </section>
+        <section class="section">
+            <h2>Work Experience</h2>
+            <div class="item">
+                <h3>Software Systems Analyst/Programmer - Kentucky Transportation Cabinet</h3>
+                <p><strong>Dates:</strong> Dec. 2024 – Present</p>
+                <p>
+                    Part-time mobile applications support specializing in metadata development, Survey123 and Web Experience Builder
+                    applications development,
+                    programming back-end support scripts for ArcGIS Online Administration tasks.
+                </p>
+            </div>
+            <div class="item">
+                <h3>Systems Consultant – IT - Kentucky Transportation Cabinet</h3>
+                <p><strong>Dates:</strong> Aug. 2012 – Sept. 2024</p>
+                <ul>
+                    <li>Spearheaded the development, deployment, and administration of over 100 SQL Server-based spatial databases,
+                        ensuring high availability, performance, and data integrity across multiple enterprise GIS applications.
+                    </li>
+                    <li>Maintained and upgraded ArcGIS SDE Servers, including both hardware and software components, to support
+                        dynamic, multi-user editing environments and geospatial services.</li>
+                    <li>Designed and automated end-to-end ETL workflows using Python and SQL Server Stored Procedures, significantly
+                        reducing manual processing time and improving data reliability.</li>
+                    <li>Successfully integrated GIS datasets with both Oracle and SQL Server systems, including the creation of
+                        optimized spatial data schemas and comprehensive metadata documentation.</li>
+                    <li>Delivered real-time GIS analysis and data products during critical emergency response efforts (e.g.,
+                        tornadoes, floods), supporting rapid decision-making and situational awareness.</li>
+                    <li>Strengthened GIS data governance through the development and implementation of Master Data Management (MDM)
+                        strategies, enhancing data quality, consistency, and compliance with organizational standards.</li>
+                </ul>
+            </div>
+        </section>
+        <div class="section">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>B.S. Environmental Geology – University of Kentucky</h3>
+            </div>
+            <div class="item">
+                <h3>B.S. Biology – University of Kentucky</h3>
+            </div>
+            <div class="item">
+                <h3>B.S. Secondary Education – University of Kentucky</h3>
+            </div>
+            <div class="item">
+                <h3>M.S. Hydrogeology – University of Kentucky</h3>
+            </div>
+            </section>
+            <section class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL Server</li>
+                        <li>ArcGIS</li>
+                        <li>Data Analytics</li>
+                        <li>Team Leadership</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <h2>Projects</h2>
+                <div class="item">
+                    <h3>Pothole Reporter</h3>
+                    <p><strong>Description:</strong><br>
+                        This is an interactive, responsive HTML and JavaScript-based form for reporting potholes. It supports location
+                        selection
+                        via map, dynamic county filtering, reverse geocoding, and user-friendly field validation. The form is tailored
+                        for
+                        public or internal reporting and is extensible for integration with backend databases and dashboards.
+
+                        Report entries are submitted and stored in a backend database that will feed an interactive dashboard
+                        for district personnel. The dashboard will provide a visual representation of the data, including
+                        the location of the potholes, the number of reports, and the route metrics. This will allow for
+                        better decision making and resource allocation.
+                    </p>
+                    <p><strong>Technologies Used:</strong><br>
+                        JavaScript, HTML, CSS, API, GeoJSON, Leaflet, Flexbox, Responsive Design
+                    </p>
+                    <p><strong>Role:</strong> Lead GIS Database Administrator & Developer</p>
+                </div>
+                <div class="item">
+                    <h3>Work Zone Traffic Crash Analysis in Kentucky</h3>
+                    <p><strong>Description:</strong><br>
+                        As the lead developer, I designed and executed a data-driven project to analyze traffic accidents in
+                        construction work zones across Kentucky.
+                        The project integrates crash data from the Kentucky State Police Collision Data portal with roadway
+                        characteristics from the Kentucky
+                        Transportation Cabinet’s API to provide a more accurate and comprehensive view of each incident. The primary
+                        objective was to explore
+                        new data visualization techniques outside traditional GIS software while uncovering patterns and contributing
+                        factors to improve roadway
+                        safety in high-risk zones.</p>
+                    <p><strong>Technologies:</strong> Python, Pandas, SQLite, GeoJSON, Plotly, Matplotlib, Tableau, Jupyter Notebook,
+                        KYTC Roadway Characteristics API, Panel</p>
+                    <p><strong>Role:</strong> Lead Developer</p>
+                </div>
+                <div>
+                    <p><a href="projects.html">View All Projects →</a></p>
+                </div>
+            </section>
+    </main>
+</body>
+
+</html>
