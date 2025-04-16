@@ -66,6 +66,11 @@ h2 {
        font-size: 18px;
        color: #555;
    }
+.item h4 {
+       margin: 0;
+       font-size: 16px;
+       color: #555;
+   }
 
 .item p {
        margin: 5px 0;
@@ -79,11 +84,11 @@ h2 {
 
 .skills ul li {
        display: inline-block;
-       background: #007bff;
+       background: #2d512b;
        color: #fff;
-       padding: 5px 10px;
+       padding: 5px 5px;
        margin: 5px 5px 5px 0;
-       border-radius: 4px;
+       border-radius: 3px;
    }
 
 
@@ -94,6 +99,24 @@ h3 {
 
 p {
     color: #2c3e50;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.header-row h4 {
+    margin: 0;
+    flex: 1;
+}
+
+.header-row .dates {
+    margin: 0;
+    white-space: nowrap;
 }
 
 /* Navigation */
