@@ -1,38 +1,57 @@
+/* Root Theme Colors */
+:root {
+    --accent: #a26e39;
+    --sidebar-bg: #a9afa3;
+    --highlight: #a26e39;
+    --text-dark: #333;
+    --light-bg: #fdfdfd;
+    --font-main: Arial, sans-serif;
+}
+
+/* Base Reset */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #fdfdfd;
-    color: #333;
+    font-family: var(--font-main);
+    background-color: var(--light-bg);
+    color: var(--text-dark);
 }
 
+/* Container: mobile = stacked, desktop = grid */
 .container {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Sidebar (mobile layout) */
 .sidebar {
-    background-color: #a9afa3;
+    background-color: var(--sidebar-bg);
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
+/* Profile Photo */
 .profile-photo {
     width: 50%;
-    border-radius: 200px;
+    max-width: 150px;
+    border-radius: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
 }
 
-
-.contacts,
-.education,
-.skills {
-    font-size: 0.9rem;
+/* Section headers */
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--highlight);
 }
 
+/* Main Content */
 .content {
     padding: 30px;
     display: flex;
@@ -53,20 +72,99 @@ header h2 {
 }
 
 .highlight {
-    color: #a26e39;
+    color: var(--highlight);
 }
 
-section h2 {
-    color: #a26e39;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+/* Experience Section */
+.experience ul {
+    padding-left: 1.25rem;
 }
 
+.experience h4 {
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Skills List */
 .skills ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .skills li {
     margin-bottom: 4px;
+}
+
+/* Interests */
+.interests p {
+    font-size: 1.5rem;
+}
+
+/* Collapsible Logic */
+.collapsible h2 {
+    cursor: pointer;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.collapsible h2::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.8rem;
+    color: #444;
+    transition: transform 0.3s ease;
+}
+
+.collapsed h2::after {
+    transform: rotate(-90deg);
+}
+
+.section-content {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.collapsed .section-content {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsive layout for tablet/desktop */
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        min-height: 100vh;
+    }
+
+    .profile-photo {
+        width: 80%;
+    }
+
+    /* Disable collapsing on desktop */
+    .collapsible h2 {
+        cursor: default;
+    }
+
+    .collapsible h2::after {
+        display: none;
+    }
+
+    .section-content {
+        max-height: none !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+    }
 }

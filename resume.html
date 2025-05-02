@@ -10,36 +10,46 @@
 
 <body>
     <div class="container">
+        <!-- Sidebar -->
         <aside class="sidebar">
             <img src="img/headshot.png" alt="Teri Dowdy" class="profile-photo" />
-            <section class="contacts">
+
+            <section class="contacts collapsible">
                 <h2>Contact</h2>
-                <p>📞 1-859-339-0440</p>
-                <p>📧 teri.dowdy@gmail.com</p>
-                <p>🏠 159 Suburban Ct.
-                      Lexington, KY 40503</p>
+                <div class="section-content">
+                    <p>📞 1-859-339-0440</p>
+                    <p>📧 <a href="mailto:teri.dowdy@gmail.com">teri.dowdy@gmail.com</a></p>
+                    <p>🏠 159 Suburban Ct.<br>Lexington, KY 40503</p>
+                </div>
             </section>
-            <section class="education">
+
+            <section class="education collapsible">
                 <h2>Education</h2>
-                <p><strong>B.S. Environmental Geology</strong><br>University of Kentucky</p>
-                <p><strong>B.S. Biology</strong><br>University of Kentucky</p>
-                <p><strong>B.S. Secondary Education</strong><br>University of Kentucky</p>
-                <p><strong>M.S. Hydrogeology</strong><br>University of Kentucky</p>
+                <div class="section-content">
+                    <p><strong>B.S. Environmental Geology</strong><br>University of Kentucky</p>
+                    <p><strong>B.S. Biology</strong><br>University of Kentucky</p>
+                    <p><strong>B.S. Secondary Education</strong><br>University of Kentucky</p>
+                    <p><strong>M.S. Hydrogeology</strong><br>University of Kentucky</p>
+                </div>
             </section>
-            <section class="skills">
+
+            <section class="skills collapsible">
                 <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>SQL Server</li>
-                    <li>ArcGIS</li>
-                    <li>Data Analytics</li>
-                </ul>
+                <div class="section-content">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>SQL Server</li>
+                        <li>ArcGIS</li>
+                        <li>Data Analytics</li>
+                    </ul>
+                </div>
             </section>
         </aside>
 
+        <!-- Main Content -->
         <main class="content">
             <header>
                 <h1>Teri <span class="highlight">Dowdy</span></h1>
@@ -47,6 +57,7 @@
             </header>
 
             <section class="summary">
+                <h2>Profile</h2>
                 <p>Results-driven Software Systems Analyst/Programmer with Geographic Information Systems (GIS)
                     and Information Technology (IT) expertise. Specializing in spatial data management and GIS
                     application development, I have led teams to automate workflows and integrate diverse data
@@ -58,49 +69,37 @@
 
             <section class="experience">
                 <h2>Work Experience</h2>
-                <h3>Kentucky Transportation Cabinet - OIT</h3><h4> Dec. 2024 – Present</h4>
+
+                <h3>Kentucky Transportation Cabinet - OIT</h3>
+                <h4>Dec. 2024 – Present</h4>
                 <p>Software Systems Analyst/Programmer</p>
                 <ul>
-                    <li>Mobile applications support & development with custom JavaScript and out-of-the-box
-                        Esri applications</li>
+                    <li>Mobile applications support & development with custom JavaScript and out-of-the-box Esri
+                        applications</li>
                     <li>AGOL Administration support tasks</li>
                     <li>Metadata development</li>
                 </ul>
 
-                <h3>Kentucky Transportation Cabinet - OIT</h3><h4> July 2015 – Dec. 2024</h4>
-                <p>Systems Consultant – IT</p>
-                <ul>
-                    <li>Led development and administration of over 100 SQL Server-based spatial databases,
-                        maintained and updated ArcGIS SDE Servers, including hardware and software.</li>
-                    <li>Automated ETL processes and SQL Server Stored Procedures to support GIS environments.</li>
-                    <li>Provided critical GIS analysis during emergency events.</li>
-                    <li>Enhanced GIS data governance and Master Data Management strategies.</li>
-                </ul>
-                <h3>Kentucky Transportation Cabinet - OIT</h3><h4> Dec. 2024 – Present</h4>
-                <p>Software Systems Analyst/Programmer</p>
-                <ul>
-                    <li>Mobile applications support & development with custom JavaScript and out-of-the-box
-                        Esri applications</li>
-                    <li>AGOL Administration support tasks</li>
-                    <li>Metadata development</li>
-                </ul>
                 <h3>Kentucky Transportation Cabinet - OIT</h3>
-                <h4> July 2015 – Dec. 2024</h4>
+                <h4>July 2015 – Dec. 2024</h4>
                 <p>Systems Consultant – IT</p>
                 <ul>
-                    <li>Led development and administration of over 100 SQL Server-based spatial databases,
-                        maintained and updated ArcGIS SDE Servers, including hardware and software.</li>
-                    <li>Automated ETL processes and SQL Server Stored Procedures to support GIS environments.</li>
-                    <li>Provided critical GIS analysis during emergency events.</li>
-                    <li>Enhanced GIS data governance and Master Data Management strategies.</li>
+                    <li>Led development and administration of over 100 SQL Server-based spatial databases</li>
+                    <li>Automated ETL processes and SQL Server Stored Procedures</li>
+                    <li>Provided critical GIS analysis during emergency events</li>
+                    <li>Enhanced GIS data governance and Master Data Management strategies</li>
                 </ul>
             </section>
+
             <section class="interests">
                 <h2>Interests</h2>
-                <p>🚴 🎧 🎸 🎥</p>
+                <p>🥾 📖 🎧 🎸 🎥</p>
             </section>
         </main>
     </div>
-</body>
 
-</html>
+    <!-- Toggle Script -->
+    <script src="js/collapsibles.js"></script>
+    </body>
+
+    </html>
