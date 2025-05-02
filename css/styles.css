@@ -1,148 +1,72 @@
-/* Overall page background */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #a9afa3;
-    /* Very pale green */
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0px;
-    display: flex;
-    color:  #333;
-    justify-content: center;
+    background-color: #fdfdfd;
+    color: #333;
 }
 
-/* Main content wrapper (sheet-like appearance) */
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    width: 100%;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: 100vh;
 }
 
-/* Headings */
-h1,
-h2 {
-    color: #2d512b;
-    /* Forest green */
+.sidebar {
+    background-color: #a9afa3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-photo {
+    width: 50%;
+    border-radius: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.contacts,
+.education,
+.skills {
+    font-size: 0.9rem;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #666;
     margin-top: 0;
 }
-.header {
-       text-align: center;
-   }
 
-.header h1 {
-       margin: 10px 0;
-   }
+.highlight {
+    color: #a26e39;
+}
 
-.contact {
-       margin: 10px 0;
-       font-size: 14px;
-   }
-
-.contact a {
-       color: #007bff;
-       text-decoration: none;
-   }
-
-.section {
-       margin: 20px 0;
-   }
-
-.section h2 {
-       margin-bottom: 10px;
-       border-bottom: 2px solid #1e2e24;
-       padding-bottom: 5px;
-   }
-
-.item {
-       margin-bottom: 15px;
-   }
-
-.item h3 {
-       margin: 0;
-       font-size: 18px;
-       color: #555;
-   }
-.item h4 {
-       margin: 0;
-       font-size: 16px;
-       color: #555;
-   }
-
-.item p {
-       margin: 5px 0;
-       font-size: 14px;
-   }
+section h2 {
+    color: #a26e39;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
 
 .skills ul {
-       list-style: none;
-       padding: 0;
-   }
-
-.skills ul li {
-       display: inline-block;
-       background: #2d512b;
-       color: #fff;
-       padding: 5px 5px;
-       margin: 5px 5px 5px 0;
-       border-radius: 3px;
-   }
-
-
-h3 {
-    color: #444444;
-    /* Dark gray */
+    list-style: none;
+    padding: 0;
 }
 
-p {
-    color: #2c3e50;
-}
-
-.header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.header-row h4 {
-    margin: 0;
-    flex: 1;
-}
-
-.header-row .dates {
-    margin: 0;
-    white-space: nowrap;
-}
-
-/* Navigation */
-nav {
-    margin-bottom: 20px;
-}
-
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #3498db;
-}
-
-/* Section spacing */
-.section {
-    margin-bottom: 40px;
-}
-
-.item {
-    margin-bottom: 30px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 0.5em;
+.skills li {
+    margin-bottom: 4px;
 }
