@@ -4,28 +4,25 @@ function setupCollapsibles() {
   collapsibles.forEach(section => {
     const header = section.querySelector("h2");
 
-    // Remove existing click listeners to avoid duplicates
+    // Replace header to prevent duplicate listeners
     const newHeader = header.cloneNode(true);
     header.parentNode.replaceChild(newHeader, header);
 
-    // Reattach click handler
+    // Attach click toggle
     newHeader.addEventListener("click", () => {
-      if (window.innerWidth < 768) {
-        section.classList.toggle("collapsed");
-      }
+      section.classList.toggle("collapsed");
     });
 
-    // Collapse by default on mobile, expand on desktop
-    if (window.innerWidth < 768) {
+    // Only collapse Education and Skills by default on mobile
+    const id = section.classList.contains("education") ? "education"
+              : section.classList.contains("skills") ? "skills"
+              : "";
+
+    if (window.innerWidth < 768 && (id === "education" || id === "skills")) {
       section.classList.add("collapsed");
-    } else {
-      section.classList.remove("collapsed");
     }
   });
 }
 
-console.log("Collapsible setup for:", section);
-
-// Setup on load
 window.addEventListener("DOMContentLoaded", setupCollapsibles);
 window.addEventListener("resize", setupCollapsibles);

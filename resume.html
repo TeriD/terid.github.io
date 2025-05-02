@@ -14,7 +14,7 @@
         <aside class="sidebar">
             <img src="img/headshot.png" alt="Teri Dowdy" class="profile-photo" />
 
-            <section class="contacts collapsible">
+            <section class="contacts">
                 <h2>Contact</h2>
                 <div class="section-content">
                     <p>📞 1-859-339-0440</p>
@@ -67,28 +67,98 @@
                     collaboration within teams.</p>
             </section>
 
-            <section class="experience">
+            <section class="experience collapsible">
                 <h2>Work Experience</h2>
+                <div class="section-content">
+                    <h3>Kentucky Transportation Cabinet - OIT</h3>
+                    <h4>Dec. 2024 – Present</h4>
+                    <p>Software Systems Analyst/Programmer</p>
+                    <ul>
+                        <li>Mobile applications support & development...</li>
+                        <li>AGOL Administration support tasks</li>
+                        <li>Metadata development</li>
+                    </ul>
 
-                <h3>Kentucky Transportation Cabinet - OIT</h3>
-                <h4>Dec. 2024 – Present</h4>
-                <p>Software Systems Analyst/Programmer</p>
-                <ul>
-                    <li>Mobile applications support & development with custom JavaScript and out-of-the-box Esri
-                        applications</li>
-                    <li>AGOL Administration support tasks</li>
-                    <li>Metadata development</li>
-                </ul>
+                    <h3>Kentucky Transportation Cabinet - OIT</h3>
+                    <h4>July 2015 – Dec. 2024</h4>
+                    <p>Systems Consultant – IT</p>
+                    <ul>
+                        <li>SQL Server-based spatial databases</li>
+                        <li>Automated ETL processes and Stored Procedures</li>
+                        <li>Emergency GIS support and MDM</li>
+                    </ul>
 
-                <h3>Kentucky Transportation Cabinet - OIT</h3>
-                <h4>July 2015 – Dec. 2024</h4>
-                <p>Systems Consultant – IT</p>
-                <ul>
-                    <li>Led development and administration of over 100 SQL Server-based spatial databases</li>
-                    <li>Automated ETL processes and SQL Server Stored Procedures</li>
-                    <li>Provided critical GIS analysis during emergency events</li>
-                    <li>Enhanced GIS data governance and Master Data Management strategies</li>
-                </ul>
+                    <h3>Kentucky Transportation Cabinet - OIT</h3>
+                    <h4>Systems Consultant – IT<br><span class="dates">July 2015 – Sept. 2024</span></h4>
+                    <ul>
+                        <li>Led development and administration of over 100 SQL Server-based spatial databases, maintained and
+                            updated ArcGIS SDE Servers, including hardware and software.</li>
+                        <li>Automated ETL processes and SQL Server Stored Procedures to support GIS environments.</li>
+                        <li>Provided critical GIS analysis during emergency events.</li>
+                        <li>Enhanced GIS data governance and Master Data Management strategies.</li>
+                    </ul>
+
+                    <h3>Kentucky Transportation Cabinet - OIT</h3>
+                    <h4>GIS Specialist III<br><span class="dates">Aug. 2012 – July 2015</span></h4>
+                    <ul>
+                        <li>Supported 500+ GIS users and maintained enterprise-level spatial databases.</li>
+                        <li>Automated data transfer processes, reducing times from 48 to under 4 hours.</li>
+                        <li>Created multiple ETL processes and application development using Python, JavaScript and C#.</li>
+                    </ul>
+
+                    <h3>University of Kentucky - Biosystems & Agricultural Engineering</h3>
+                    <h4>Adjunct Faculty/Webmaster<br><span class="dates">Jan. 2001 – Aug. 2012</span></h4>
+                    <ul>
+                        <li>Developed and taught a GIS course for graduate and upper-level undergraduate students.</li>
+                        <li>Supported departmental GIS needs and maintained software and servers.</li>
+                        <li>Designed and maintained department websites, including interactive online JavaScript tools for agricultural
+                            compliance.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ✅ Collapsible & collapsed by default -->
+            <section class="projects collapsible collapsed">
+                <h2>Projects</h2>
+                <div class="section-content">
+                    <div class="item">
+                        <h3>Pothole Reporter</h3>
+                        <p><strong>Description:</strong><br>
+                            Developed an interactive and responsive web form showcasing my web development skills and
+                            incorporating GIS
+                            and API calls. Built with HTML, CSS, and JavaScript, it allows users to select their
+                            location through either
+                            their device's GPS or an interactive map...
+                        </p>
+                        <p><strong>Technologies Used:</strong><br>
+                            JavaScript, HTML, CSS, API, GeoJSON, Leaflet, Flexbox, Responsive Design
+                        </p>
+                        <p><strong>Role:</strong> Lead Developer</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Work Zone Traffic Crash Analysis in Kentucky</h3>
+                        <p><strong>Description:</strong><br>
+                            Designed and executed a data-driven project to analyze traffic accidents in construction
+                            work zones across
+                            Kentucky...
+                        </p>
+                        <p><strong>Technologies:</strong> Python, Pandas, SQLite, GeoJSON, Plotly, Tableau, Jupyter,
+                            KYTC APIs</p>
+                        <p><strong>Role:</strong> Lead Developer</p>
+                    </div>
+
+                    <div class="item">
+                        <p>Explore featured projects involving GIS, Python, JavaScript, and data visualization:</p>
+                        <ul>
+                            <li><a href="projects.html">Pothole Reporter</a></li>
+                            <li><a href="projects.html">Work Zone Traffic Crash Dashboard</a></li>
+                            <li><a href="projects.html">Bridge Points of Interest Script</a></li>
+                            <li><a href="projects.html">Spatial Data Warehouse</a></li>
+                        </ul>
+                        <p><a href="projects.html">View All Projects →</a></p>
+                    </div>
+                </div>
             </section>
 
             <section class="interests">
@@ -98,8 +168,8 @@
         </main>
     </div>
 
-    <!-- Toggle Script -->
+    <!-- ✅ Reference to external JS -->
     <script src="js/collapsibles.js"></script>
-    </body>
+</body>
 
-    </html>
+</html>

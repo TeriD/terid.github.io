@@ -1,14 +1,13 @@
-/* Root Theme Colors */
 :root {
     --accent: #a26e39;
     --sidebar-bg: #a9afa3;
-    --highlight: #a26e39;
+    --highlight: #043801;
     --text-dark: #333;
     --light-bg: #fdfdfd;
     --font-main: Arial, sans-serif;
 }
 
-/* Base Reset */
+/* Reset and base styles */
 * {
     box-sizing: border-box;
 }
@@ -20,13 +19,13 @@ body {
     color: var(--text-dark);
 }
 
-/* Container: mobile = stacked, desktop = grid */
+/* Mobile-first stacked layout */
 .container {
     display: flex;
     flex-direction: column;
 }
 
-/* Sidebar (mobile layout) */
+/* Sidebar */
 .sidebar {
     background-color: var(--sidebar-bg);
     padding: 20px;
@@ -35,23 +34,74 @@ body {
     gap: 1.5rem;
 }
 
-/* Profile Photo */
 .profile-photo {
-    width: 50%;
+    width: 25%;
     max-width: 150px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 1rem;
 }
 
-/* Section headers */
+@media (min-width: 768px) {
+    .profile-photo {
+        width: 80%;
+    }
+}
+
+/* All section titles */
 h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--highlight);
+    color: var(--accent);
 }
 
-/* Main Content */
+/* Collapsible section header behavior (excluding Contact section) */
+.collapsible:not(.contacts) h2 {
+    cursor: pointer;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.collapsible:not(.contacts) h2::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.8rem;
+    color: #444;
+    transition: transform 0.3s ease;
+}
+
+.collapsible:not(.contacts).collapsed h2::after {
+    transform: rotate(-90deg);
+}
+
+/* Collapsible content */
+.section-content {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.collapsible:not(.contacts).collapsed .section-content {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Skills list */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    margin-bottom: 4px;
+}
+
+/* Main content */
 .content {
     padding: 30px;
     display: flex;
@@ -75,9 +125,22 @@ header h2 {
     color: var(--highlight);
 }
 
-/* Experience Section */
+/* Section headers */
+.summary h2,
+.experience h2,
+.interests h2 {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+/* Experience layout */
 .experience ul {
     padding-left: 1.25rem;
+}
+
+.experience h3 {
+    margin-bottom: 0;
 }
 
 .experience h4 {
@@ -87,57 +150,12 @@ header h2 {
     color: #666;
 }
 
-/* Skills List */
-.skills ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skills li {
-    margin-bottom: 4px;
-}
-
-/* Interests */
+/* Interests icons */
 .interests p {
     font-size: 1.5rem;
 }
 
-/* Collapsible Logic */
-.collapsible h2 {
-    cursor: pointer;
-    position: relative;
-    padding-right: 1.5rem;
-}
-
-.collapsible h2::after {
-    content: "▼";
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 0.8rem;
-    color: #444;
-    transition: transform 0.3s ease;
-}
-
-.collapsed h2::after {
-    transform: rotate(-90deg);
-}
-
-.section-content {
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    overflow: hidden;
-    max-height: 1000px;
-    opacity: 1;
-}
-
-.collapsed .section-content {
-    max-height: 0;
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* Responsive layout for tablet/desktop */
+/* Responsive desktop layout */
 @media (min-width: 768px) {
     .container {
         display: grid;
@@ -153,7 +171,7 @@ header h2 {
         width: 80%;
     }
 
-    /* Disable collapsing on desktop */
+    /* Disable collapse behavior on desktop */
     .collapsible h2 {
         cursor: default;
     }
@@ -167,4 +185,28 @@ header h2 {
         opacity: 1 !important;
         pointer-events: auto !important;
     }
+}
+
+/* Projects Section */
+.projects .item {
+    margin-bottom: 2rem;
+}
+
+.projects h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--highlight);
+}
+
+.projects ul {
+    padding-left: 1.25rem;
+}
+
+.projects a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
 }
