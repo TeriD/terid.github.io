@@ -210,3 +210,11 @@ header h2 {
 .projects a:hover {
     text-decoration: underline;
 }
+
+.projects .item {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}

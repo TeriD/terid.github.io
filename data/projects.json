@@ -1,0 +1,40 @@
+[
+    {
+      "title": "Pothole Reporter",
+      "description": "Developed an interactive and responsive web form showcasing my web development skills and incorporating GIS and API calls. Built with HTML, CSS, and JavaScript, it allows users to select their location through either their device's GPS or an interactive map...",
+      "technologies": "JavaScript, HTML, CSS, API, GeoJSON, Leaflet, Flexbox, Responsive Design",
+      "role": "Lead Developer",
+      "link": "projects.html"
+    },
+    {
+      "title": "Work Zone Traffic Crash Analysis in Kentucky",
+      "description": "Designed and executed a data-driven project to analyze traffic accidents in construction work zones across Kentucky...",
+      "technologies": "Python, Pandas, SQLite, GeoJSON, Plotly, Tableau, Jupyter, KYTC APIs",
+      "role": "Lead Developer",
+      "link": "projects.html"
+    },
+    {
+      "title": "Featured Projects Overview",
+      "description": "Explore featured projects involving GIS, Python, JavaScript, and data visualization.",
+      "technologies": "",
+      "role": "",
+      "links": [
+        {
+          "label": "Pothole Reporter",
+          "href": "projects.html"
+        },
+        {
+          "label": "Work Zone Traffic Crash Dashboard",
+          "href": "projects.html"
+        },
+        {
+          "label": "Bridge Points of Interest Script",
+          "href": "projects.html"
+        },
+        {
+          "label": "Spatial Data Warehouse",
+          "href": "projects.html"
+        }
+      ]
+    }
+  ]
