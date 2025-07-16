@@ -1,10 +1,10 @@
 [
     {
-      "title": "Kentucky Historical Covered Bridges",
-      "description": "Developed a simple, clean interactive webpage that presents the locations of the remaining covered bridges in Kentucky, along with historical information and an image of the bridge."
+      "title": "Kentucky Historic Covered Bridges",
+      "description": "Developed a simple, clean interactive webpage that presents the locations of the remaining covered bridges in Kentucky, along with historical information and an image of the bridge.",
       "technologies": "HTML, CSS, JavaScript, GeoJSON, Leaflet",
       "role": "Lead Developer",
-      "link": "https://terid.github.io/KY_Covered_Bridges/"
+      "link": "projects.html"
 
     }
     {
