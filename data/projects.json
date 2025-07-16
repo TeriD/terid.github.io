@@ -1,5 +1,13 @@
 [
     {
+      "title": "Kentucky Historical Covered Bridges",
+      "description": "Developed a simple, clean interactive webpage that presents the locations of the remaining covered bridges in Kentucky, along with historical information and an image of the bridge."
+      "technologies": "HTML, CSS, JavaScript, GeoJSON, Leaflet",
+      "role": "Lead Developer",
+      "link": "https://terid.github.io/KY_Covered_Bridges/"
+
+    }
+    {
       "title": "Pothole Reporter",
       "description": "Developed an interactive and responsive web form showcasing my web development skills and incorporating GIS and API calls. Built with HTML, CSS, and JavaScript, it allows users to select their location through either their device's GPS or an interactive map...",
       "technologies": "JavaScript, HTML, CSS, API, GeoJSON, Leaflet, Flexbox, Responsive Design",
